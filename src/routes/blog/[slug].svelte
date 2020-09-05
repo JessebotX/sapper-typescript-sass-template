@@ -14,7 +14,7 @@
 </script>
 
 <script lang="ts">
-	export let post: string;
+	export let post;
 </script>
 
 <style>
