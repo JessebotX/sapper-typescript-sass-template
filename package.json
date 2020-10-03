@@ -13,7 +13,12 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "date-fns": "^2.16.1",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.1.1",
     "polka": "next",
+    "prismjs": "^1.21.0",
+    "reading-time": "^1.2.0",
     "sirv": "^1.0.0"
   },
   "devDependencies": {
@@ -33,10 +38,11 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.32",
     "rollup": "^2.3.4",
+    "rollup-plugin-glob": "^1.0.2",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^6.1.0",
-    "sapper": "^0.28.3",
-    "sass": "^1.26.10",
+    "sapper": "^0.28.10",
+    "sass": "^1.26.11",
     "svelte": "^3.17.3",
     "svelte-preprocess": "^4.0.12",
     "tslib": "^2.0.1",

@@ -6,6 +6,8 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import markdown from "./src/utils/markdown"
+import glob from "rollup-plugin-glob"
 
 import typescript from "@rollup/plugin-typescript";
 import sveltePreprocess from "svelte-preprocess";
@@ -46,7 +48,9 @@ export default {
 			resolve({
 				browser: true,
 				dedupe: ['svelte']
-			}),
+            }),
+            markdown(),
+            glob(),
 			commonjs(),
 			typescript({ sourceMap: !!sourcemap }),
 
@@ -98,7 +102,9 @@ export default {
                         plugins: [require('autoprefixer')],
                     },
                 })
-			}),
+            }),
+            markdown(),
+            glob(),
 			resolve({
 				dedupe: ['svelte']
 			}),
